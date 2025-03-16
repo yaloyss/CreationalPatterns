@@ -4,6 +4,6 @@ public class Espresso extends Coffee
 {
     public Espresso()
     {
-        name = "Еспресо";
+        this.name = "Espresso";
     }
 }

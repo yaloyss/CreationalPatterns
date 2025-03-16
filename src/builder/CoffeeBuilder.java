@@ -9,28 +9,28 @@ public class CoffeeBuilder
     private boolean sugar = false;
     private String syrup = "";
 
-    public CoffeeBuilder(Coffee coffee)
-    {
+    public CoffeeBuilder createCoffee(Coffee coffee) {
         this.coffee = coffee;
+        return this;
     }
     public CoffeeBuilder addMilk()
     {
-        milk = true;
+        coffee.hasMilk = true;
         return this;
     }
     public CoffeeBuilder addSugar()
     {
-        sugar = true;
+        coffee.hasSugar = true;
         return this;
     }
     public CoffeeBuilder addSyrup(String syrup)
     {
-        this.syrup = syrup;
+        coffee.syrup = syrup;
         return this;
     }
     public Coffee build()
     {
-        System.out.println("Готовий напій: " + coffee.name + (milk ? " + молоко" : "") + (sugar ? " + цукор" : "") + (syrup.isEmpty() ? "" : " + " + syrup + " сироп"));
+        System.out.println("Prepared drink: " + coffee.name + (milk ? " + молоко" : "") + (sugar ? " + цукор" : "") + (syrup.isEmpty() ? "" : " + " + syrup + " сироп"));
         return coffee;
     }
 }

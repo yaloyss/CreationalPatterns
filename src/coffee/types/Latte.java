@@ -4,6 +4,8 @@ public class Latte extends Coffee
 {
     public Latte()
     {
-        name = "Латте";
+        this.name = "Latte";
+        this.hasMilk = true;
+        this.hasSugar = true;
     }
 }

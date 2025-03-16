@@ -4,6 +4,8 @@ public class Cappuccino extends Coffee
 {
     public Cappuccino()
     {
-        name = "Капучино";
+        this.name = "Cappuccino";
+        this.hasMilk = true;
+        this.syrup = "Chocolate";
     }
 }
