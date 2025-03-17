@@ -5,12 +5,18 @@ import coffee.types.Coffee;
 public class CoffeeBuilder
 {
     private Coffee coffee;
+    private boolean coffeeIngredient;
     private boolean milk = false;
     private boolean sugar = false;
     private String syrup = "";
 
     public CoffeeBuilder createCoffee(Coffee coffee) {
         this.coffee = coffee;
+        return this;
+    }
+    public CoffeeBuilder addCoffee()
+    {
+        coffee.hasCoffee = true;
         return this;
     }
     public CoffeeBuilder addMilk()
@@ -30,7 +36,7 @@ public class CoffeeBuilder
     }
     public Coffee build()
     {
-        System.out.println("Prepared drink: " + coffee.name + (milk ? " + молоко" : "") + (sugar ? " + цукор" : "") + (syrup.isEmpty() ? "" : " + " + syrup + " сироп"));
+        System.out.println("Prepared drink: " + coffee.name + (milk ? " + milk" : "") + (sugar ? " + sugar" : "") + (syrup.isEmpty() ? "" : " + " + syrup + " syrup"));
         return coffee;
     }
 }
