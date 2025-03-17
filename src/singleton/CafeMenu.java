@@ -27,6 +27,6 @@ public static CafeMenu getInstance() {
 }
     public void showMenu()
     {
-        System.out.println("Menu: Espresso, Cappuccino, Latte");
+        System.out.println("Menu: Espresso, Cappuccino, Latte~~~~~~~~");
     }
 }
