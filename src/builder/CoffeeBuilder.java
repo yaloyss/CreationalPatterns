@@ -36,7 +36,7 @@ public class CoffeeBuilder
     }
     public Coffee build()
     {
-        System.out.println("Prepared drink: " + coffee.name + (milk ? " + milk" : "") + (sugar ? " + sugar" : "") + (syrup.isEmpty() ? "" : " + " + syrup + " syrup"));
+        System.out.println("Prepared drink: " + coffee.name);
         return coffee;
     }
 }

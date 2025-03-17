@@ -6,6 +6,9 @@ public class Espresso extends Coffee
     {
         this.name = "Espresso";
         this.hasCoffee = true;
+        this.hasMilk = false;
+        this.hasSugar = false;
+        this.syrup = "";
     }
 
     @Override

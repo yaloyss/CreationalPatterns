@@ -8,6 +8,7 @@ public class Cappuccino extends Coffee
         this.hasCoffee = true;
         this.hasMilk = true;
         this.syrup = "Chocolate";
+        this.hasSugar = false;
     }
 
     @Override

@@ -14,4 +14,12 @@ public abstract class Coffee implements Prototype, Cloneable
     }
     @Override
     public abstract Coffee clone();
+
+    @Override
+    public String toString() {
+        return "Drink: " + name + "\n" +
+                "Milk: " + (hasMilk ? "Yes" : "No") + "\n" +
+                "Sugar: " + (hasSugar ? "Yes" : "No") + "\n" +
+                "Syrup: " + (syrup.isEmpty() ? "None" : syrup) + "\n";
+    }
 }

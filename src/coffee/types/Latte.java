@@ -8,6 +8,7 @@ public class Latte extends Coffee
         this.hasCoffee = true;
         this.hasMilk = true;
         this.hasSugar = true;
+        this.syrup = "";
     }
 
     @Override
